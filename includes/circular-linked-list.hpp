@@ -9,23 +9,23 @@ enum class Order { kASC, kDESC };
 
 class CircularLinkedList {
 public:
-  // CircularLinkedList();
-  // CircularLinkedList(const CircularLinkedList& source);
-  // CircularLinkedList& operator=(const CircularLinkedList& source);
+  CircularLinkedList();
+  CircularLinkedList(const CircularLinkedList& source);
+  CircularLinkedList& operator=(const CircularLinkedList& source);
 
-  // void InsertInOrder(int data);
-  // ~CircularLinkedList();
-  // void Reverse();
+  void InsertInOrder(int data);
+  ~CircularLinkedList();
+  void Reverse();
 
-  // void Clear();
+  void Clear();
 
-  // friend std::ostream& operator<<(std::ostream& os,
-  //                                 const CircularLinkedList& cll);
+  friend std::ostream& operator<<(std::ostream& os,
+                                  const CircularLinkedList& cll);
 
 private:
-  // Node* head_;
-  // Node* tail_;
-  // Order node_order_;
+  Node* head_;
+  Node* tail_;
+  Order node_order_;
 };
 
 // Declarations for non-member helper function
